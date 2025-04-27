@@ -53,3 +53,4 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /SplityBackend/.vs/SplityBackend
+/SplityBackend/.vs/ProjectEvaluation
