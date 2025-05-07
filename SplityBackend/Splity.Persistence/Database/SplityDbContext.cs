@@ -13,7 +13,6 @@ namespace Splity.Persistence.Database
         public required DbSet<GroupMember> GroupMembers { get; set; }
         public required DbSet<ExpenseShare> ExpenseShares { get; set; }
         public required DbSet<Settlement> Settlements { get; set; }
-        public required DbSet<Notification> Notifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

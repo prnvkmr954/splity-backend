@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Splity.Persistence.Database;
@@ -11,9 +12,11 @@ using Splity.Persistence.Database;
 namespace Splity.Persistence.Migrations
 {
     [DbContext(typeof(SplityDbContext))]
-    partial class SplityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250507124619_SplityAppEntities_Postgres")]
+    partial class SplityAppEntities_Postgres
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
